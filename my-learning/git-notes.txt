@@ -1,10 +1,51 @@
-ls	to list files and directories
-cd	change directory
-ls project	to list files and directories in project folder
-ls -a	to list files and directories with hidden files(like .git)
-git init 	Create an empty Git repository or reinitialize an existing one
-git add fileName	to stage the file 
-git add .	to stage all files
-git restore --staged fileName	to unstage or remove the staged files(which we do using git add)
-git log	to see the recent commit
+======================GIT=============================
+cd /c - change dir
+mkdir - make dir 
+git clone url - to clone 
+ls - to see folder structure 
+git config --global user.name "dsrathore344" 
+git config --global user.email rathore344@gmail.com
+git add filename.extension - to add file in git repo
+git status - to check status
 
+have to commit yore file Before transferring your file to github account  
+ git commit -m "ant comment" filename.extension
+
+git push -u origin master - to transfer 
+--------------
+touch file.extension - to create file in particularaddpush folder
+
+git init - to initialize git repo to particular folder
+
+push exixting repo prom command line----
+git remote add origin URL_of_github_repo
+git push -u origin master
+
+git pull origin master
+====================== push an existing repository from the command line==========
+if we have any project and we want to push it to git hub, than follow below steps
+-open cmd and initialize git repo using "git init" 
+	an empty git repo will be initialized.we can check status using "git status"()
+-in this empty repo add any file using "git add filename.ext"
+	now if we check status, file name gets turned from red to green color.
+-now need to commit this using "git commit -m"any comment" Filename.ext.
+-establish connection from github repo using "git remote add origin https://github.com/dsrathore344/JavaHelloWorldRun.git".
+-push this repo to that github repo using "git push -u origin master".
+
+=====================add any file into github repo======================
+open cmd from which file u need to add then use "git clone https://github.com/dsrathore344/JavaHelloWorldRun.git".
+-add file using "git add filename.ext".
+-commit using "git commit -m"any comment" ".
+-push it using "git push -u origin master".
++++++++++++
+touch .gitignore  - to create file .gitignore, where we can set file which we dont want to commite or push into git hub
+git add --all  - to add commit all files OR git -A
+git commit -a -m  "comment"
+git log
+++++++++++++++++
+-to create new branch
+git branch branchName
+git checkout branchName - to switch to branch branchName 
+-so this branch is the sub branch of master branch. The changes made in this new branch will not be appear in master one but we can see all file of master in this new branch.
+-to merge branch into master 
+git merge branchName
