@@ -1,0 +1,10 @@
+ls	to list files and directories
+cd	change directory
+ls project	to list files and directories in project folder
+ls -a	to list files and directories with hidden files(like .git)
+git init 	Create an empty Git repository or reinitialize an existing one
+git add fileName	to stage the file 
+git add .	to stage all files
+git restore --staged fileName	to unstage or remove the staged files(which we do using git add)
+git log	to see the recent commit
+
